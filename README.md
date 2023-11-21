@@ -27,7 +27,7 @@ This is a straightforward chat application where multiple users can connect to a
 - Yarn package manager
 
 ### Steps
-1. Clone the repository: `git clone <repository-url>`
+1. Clone the repository: `git clone https://github.com/Suhelpatel786/socket-practice.git`
 2. **Frontend Setup**:
     ```bash
     cd socket
