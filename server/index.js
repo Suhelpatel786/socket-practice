@@ -23,6 +23,12 @@ io.on("connection", (socket) => {
     socket.join(data);
     console.log(`User with ID = ${socket.id} joined this ${data} `);
   });
+
+  //getting use message
+  socket.on("send_message", (data) => {
+    //to send the spacific room
+    socket.to(data.room).emit("recive_message", data);
+  });
   //when users try to disconnect
   socket.on("disconnect", () => {
     console.log("User Dosconneted", socket.id);
