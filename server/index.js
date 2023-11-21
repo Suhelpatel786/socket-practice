@@ -18,6 +18,11 @@ const io = new Server(server, {
 io.on("connection", (socket) => {
   console.log(`socket ${socket.id}`);
 
+  //joining the room
+  socket.on("join_room", (data) => {
+    socket.join(data);
+    console.log(`User with ID = ${socket.id} joined this ${data} `);
+  });
   //when users try to disconnect
   socket.on("disconnect", () => {
     console.log("User Dosconneted", socket.id);
