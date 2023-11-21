@@ -30,13 +30,13 @@ This is a straightforward chat application where multiple users can connect to a
 1. Clone the repository: `git clone <repository-url>`
 2. **Frontend Setup**:
     ```bash
-    cd frontend
+    cd socket
     yarn install
     yarn start
     ```
 3. **Backend Setup**:
     ```bash
-    cd backend
+    cd server
     yarn install
     yarn start
     ```
